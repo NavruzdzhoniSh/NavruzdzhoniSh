@@ -1,0 +1,392 @@
+* {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  background-color: #0d1323;
+}
+
+main {
+  padding: 50px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-report {
+  width: 310px;
+}
+
+.user-date {
+  display: flex;
+  background-color: #5746e9;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.user-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.user-information {
+  margin-left: 20px;
+}
+.report-text {
+  font-size: 12px;
+  color: #d1d5ec;
+}
+
+.user-name {
+  font-weight: 300;
+}
+
+.user-calandar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  margin-top: -20px;
+  height: 80px;
+  background-color: #1d204b;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.daily {
+  cursor: pointer;
+  color: #575a9c;
+}
+
+.daily:hover {
+  color: #ffffff;
+}
+
+.weekly {
+  cursor: pointer;
+}
+
+.wonthly {
+  cursor: pointer;
+  color: #575a9c;
+}
+
+.wonthly:hover {
+  color: #ffffff;
+}
+
+.card-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: 20px;
+  width: 310px;
+}
+
+.bottom-card1,
+.bottom-card2,
+.bottom-card3,
+.bottom-card4,
+.bottom-card5,
+.bottom-card6 {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  z-index: -1;
+  margin-bottom: -40px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.bottom-card1 img,
+.bottom-card2 img,
+.bottom-card3 img,
+.bottom-card4 img,
+.bottom-card5 img,
+.bottom-card6 img {
+  margin-top: -5px;
+}
+
+.bottom-card1 {
+  background: #ff8b64;
+}
+
+.bottom-card2 {
+  background: #56c2e6;
+}
+
+.bottom-card3 {
+  background: #ff5e7d;
+}
+
+.bottom-card4 {
+  background: #4bcf83;
+}
+
+.bottom-card5 {
+  background: #7235d1;
+}
+
+.bottom-card6 {
+  background: #f1c75b;
+}
+
+.top-card {
+  background-color: #1d204b;
+  border-radius: 10px;
+  padding: 20px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-card:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+
+.user-plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.hours {
+  font-size: 28px;
+}
+
+.previous-active {
+  color: #b3b7f1;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.more-inf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 470px) {
+  main {
+    margin-top: 150px;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: initial;
+  }
+
+  .user-report {
+    width: initial;
+    margin-right: 20px;
+  }
+
+  .user-date {
+    width: 200px;
+    height: 310px;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 30px;
+    align-items: initial;
+  }
+
+  .card-block {
+    height: 460px;
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: initial;
+  }
+
+  .card {
+    margin-top: inherit;
+    width: 200px;
+    margin: 0 20px 20px 0;
+  }
+
+  .user-calandar {
+    height: 150px;
+    width: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    padding: 30px 30px 10px 30px;
+    border-radius: 15px;
+  }
+
+  .user-information {
+    margin-left: initial;
+    margin-top: 30px;
+  }
+  .report-text {
+    font-size: 18px;
+  }
+
+  .user-name {
+    font-weight: 300;
+    font-size: 38px;
+  }
+
+  .top-card {
+    border-radius: 15px;
+    height: 170px;
+    justify-content: space-around;
+  }
+
+  .bottom-card1,
+  .bottom-card2,
+  .bottom-card3,
+  .bottom-card4,
+  .bottom-card5,
+  .bottom-card6 {
+    border-radius: 15px;
+  }
+
+  footer {
+    position: absolute;
+    top: 1600px;
+  }
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .hours {
+    font-size: 44px;
+  }
+
+  .previous-active {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1324px) {
+  .user-date {
+    width: 300px;
+    height: 460px;
+  }
+
+  .card-block {
+    height: 460px;
+    width: 960px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .user-calandar {
+    height: 200px;
+    width: 300px;
+    justify-content: space-evenly;
+  }
+
+  .report-text {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .user-name {
+    font-weight: 300;
+    font-size: 52px;
+  }
+
+  .top-card {
+    height: 270px;
+  }
+
+  .hours {
+    font-size: 64px;
+  }
+
+  .previous-active {
+    margin-top: 10px;
+  }
+
+  .daily {
+    font-size: 24px;
+  }
+
+  .weekly {
+    font-size: 24px;
+  }
+
+  .wonthly {
+    font-size: 24px;
+  }
+
+  .plan {
+    font-size: 34px;
+  }
+
+  .more-inf img {
+    width: 35px;
+    height: 10px;
+  }
+
+  .previous-active {
+    font-size: 24px;
+  }
+
+  .user-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .user-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 717px) {
+    footer {
+        position: absolute;
+        top: 900px;
+        left: 20vw;
+      }
+}
+
+@media screen and (min-width: 920px) {
+    footer {
+        position: initial;
+      }
+}
+
